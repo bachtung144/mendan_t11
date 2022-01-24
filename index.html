@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
-    <link rel="stylesheet" href="src/css/hero-slider.css">
     <link rel="stylesheet" href="src/css/templatemo-main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
@@ -22,9 +21,9 @@
     <ul class="nav flex-column">
         <li class="nav-item"><a class="nav-link" href="#home"><span>タイトル</span></a></li>
         <li class="nav-item"><a class="nav-link" href="#services"><span>理由</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#portfolio"><span>メイン</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#our-story"><span>賞</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact-us"><span>ロケーション</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#content"><span>メイン</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#reward"><span>賞</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact"><span>ロケーション</span></a></li>
     </ul>
 </div>
 
@@ -49,7 +48,7 @@
                     <div class="line-dec"></div>
                     <p>ダナンは、ハノイとホーチミンに次ぐベトナムで3番目に大きな都市です。ダナンはベトナムで最も有名な観光都市です。</p>
                     <div class="primary-button">
-                        <a href="#portfolio" style="font-size: 14px">私たちについてもっと知る</a>
+                        <a href="#content" style="font-size: 14px">私たちについてもっと知る</a>
                     </div>
                 </div>
             </div>
@@ -90,7 +89,7 @@
 </div>
 
 
-<div class="parallax-content projects-content" id="portfolio">
+<div class="parallax-content projects-content" id="content">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -129,30 +128,30 @@
 </div>
 
 
-<div class="tabs-content" id="our-story">
+<div class="tabs-content" id="reward">
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <div class="wrapper">
                     <section id="first-tab-group" class="tabgroup">
                         <div id="tab1">
-                            <img src="src/img/detail/reward/hanabi.jpg" alt="" style="width: 870px; height: 350px">
+                            <img src="src/img/detail/reward/hanabi.jpg">
                             <p>
                                 ダナンは毎年恒例の国際花火大会の会場として選ばれました。 今まで、都市は10以上の大会を成功に開催できました。
                             </p>
                         </div>
                         <div id="tab2">
-                            <img src="src/img/detail/reward/clean-city-tab.jpg" alt="" style="width: 870px; height: 350px">
+                            <img src="src/img/detail/reward/clean-city-tab.jpg">
                             <p>
                                 ワシントンで開催された第44回APEC会合で、ダナンは、炭素含有量が最も少ないため、空気がきれいな世界20都市の1つとして世界から公式に認められました。
                             </p>
                         </div>
                         <div id="tab3">
-                            <img src="src/img/detail/reward/nice-city-tab.jpg" alt="" style="width: 870px; height: 350px">
+                            <img src="src/img/detail/reward/nice-city-tab.jpg">
                             <p>ダナンはUN‐HABITATから「2013アジア都市景観」賞を受賞しました。</p>
                         </div>
                         <div id="tab4">
-                            <img src="src/img/detail/reward/new-city-tab.jpg" alt="" style="width: 870px; height: 350px">
+                            <img src="src/img/detail/reward/new-city-tab.jpg">
                             <p>世界中で100万人以上の読者をもつ旅行雑誌「スマート・トラベル・アジア（Smart Travel Asia）」から発表された最新の発表によりますと、ハノイ、ダナンとシンガポールは「アジアの魅力的な旅行先ランキングトップ10」の第8位になりました。</p>
                         </div>
                     </section>
@@ -169,7 +168,7 @@
 </div>
 
 
-<div class="parallax-content contact-content" id="contact-us">
+<div class="parallax-content contact-content" id="contact">
     <div class="container">
         <div class="row">
             <div class="map">
@@ -198,21 +197,5 @@
 <script src="src/js/vendor/bootstrap.min.js"></script>
 <script src="src/js/main.js"></script>
 
-<script>
-    $(document).ready(function(){
-        $(".fixed-side-navbar a, .primary-button a").on('click', function(event) {
-
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function(){
-                    window.location.hash = hash;
-                });
-            }
-        });
-    });
-</script>
 </body>
 </html>
